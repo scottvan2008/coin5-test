@@ -7,15 +7,15 @@ import { initReactI18next, useTranslation } from 'react-i18next';
 
 
 
-// i18n
-//   .use(HttpBackend)
-//   .use(initReactI18next)
-//   .init({
-//     fallbackLng: 'en',
-//     backend: {
-//       loadPath: '/locales/{{lng}}/main.json',
-//     },
-//   });
+i18n
+  .use(HttpBackend)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: 'en',
+    backend: {
+      loadPath: '/locales/{{lng}}/main.json',
+    },
+  });
 
 const Home: NextPage = () => {
 
